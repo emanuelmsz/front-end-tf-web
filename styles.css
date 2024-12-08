@@ -1,6 +1,6 @@
 /* Reset básico */
 * {
-  margin: 0;
+
   padding: 0;
   box-sizing: border-box;
 }
@@ -17,10 +17,15 @@ body {
 header {
   background-color: #ffffff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px 40px;
+  padding: 10px 40px;
   position: sticky;
   top: 0;
   z-index: 100;
+}
+
+.logo img{
+  height: 70px;
+  width: 100%;
 }
 
 .navbar {
@@ -250,7 +255,8 @@ button.agendar:hover {
 /* Sobre Nós */
 .about {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 20px;
+  padding: 10px;
 }
 
 .about blockquote {
@@ -261,49 +267,69 @@ button.agendar:hover {
   max-width: 800px;
 }
 
-/* Rodapé */
+.team{
+  padding: 20px;
+}
+
+/* Estilos gerais */
 footer {
-  background-color: #333333;
-  color: #ffffff;
-  padding: 40px 20px;
+  background-color: #222; /* Cor de fundo escura */
+  color: #fff; /* Cor da fonte clara */
+  padding: 20px;
+  display: flex; /* Usando flexbox para organizar os elementos */
+  justify-content: space-between; /* Distribuindo os elementos horizontalmente */
+  align-items: center; /* Alinhando os elementos verticalmente no centro */
+}
+
+/* Menu de navegação */
+.menu-footer {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-footer li {
+  margin-right: 20px;
+}
+
+.menu-footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Logo */
+.footer-logo {
   text-align: center;
 }
 
-footer .footer-links {
-  list-style: none;
+/* Ícones sociais */
+.social-icons {
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 20px;
-}
-
-footer .footer-links a {
-  text-decoration: none;
-  font-size: 14px;
-  color: #ffffff;
-  transition: color 0.3s ease-in-out;
-}
-
-footer .footer-links a:hover {
-  color: #0074D9;
-}
-
-footer p {
-  font-size: 14px;
-  margin-top: 10px;
-  color: #aaaaaa;
 }
 
 .social-icons a {
+  margin-left: 10px;
+  color: inherit;
   text-decoration: none;
-  color: #ffffff;
-  margin: 0 10px;
-  font-size: 20px;
-  transition: color 0.3s ease;
 }
 
-.social-icons a:hover {
-  color: #0074D9;
+/* Responsividade */
+@media (max-width: 768px) {
+  /* Ajustes para telas menores */
+  footer {
+    flex-direction: column; /* Empilhando os elementos em telas menores */
+    align-items: flex-start;
+  }
+
+  .menu-footer {
+    flex-direction: column;
+  }
+
+  .menu-footer li {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
 }
 
 
@@ -425,7 +451,7 @@ footer p {
 
 .imagem-bloco img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   transition: transform 0.3s ease;
 }
@@ -435,9 +461,27 @@ footer p {
 }
 
 
-hero h1, h2{
+.hero{
+  position:relative;
+  z-index: 1;
   text-align: center;
-  margin-bottom:0;
+}
+
+.hero h1, h2{
+  margin: 0 auto;
+}
+
+.imgcapa {
+  position: absolute;
+  z-index: -1;
+  padding: 0;
+  opacity: 35%;
+  max-height: 400px;
+  width:100%;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.imgcapa img{
+  
 }
 
 /* Card de Contato */

@@ -16,46 +16,25 @@
                 <li><a href="contato.html">Contato & Sobre Nós</a></li>
             </ul>
             <div class="logo">
-                <span>Ciro Antenas</span><br>
-                <small>Segurança Eletrônica</small>
+                <img src="/imgs/logo.png">
             </div>
         </nav>
     </header>
 
     <!-- Conteúdo Principal -->
     <main>
-        <section class="hero">
-            <h1>Bem-vindo à Ciro Antenas</h1>
-            <h2>Soluções modernas em segurança eletrônica</h2>
-            <div class="botao-container">
-              <a href=""><button class="agendar" onclick="return abrirModal()" type="button">Agendar Orçamento ou Atendimento</button></a>
-            </div>
-
-            <!-- Modal de Formulário -->
-            <div id="modal" class="modal">
-                <div class="modal-content">
-                    <span class="fechar" onclick="fecharModal()">&times;</span>
-                    <h2>Agende seu Serviço</h2>
-                    <form id="formulario-agendar">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
-
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
-
-                        <label for="telefone">Telefone:</label>
-                        <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
-
-                        <label for="mensagem">Qual o problema que deseja solucionar?</label>
-                        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva o serviço que você deseja" required></textarea>
-
-                        <button type="submit" class="enviar">Enviar: entraremos em contato o mais breve possível!</button>
-                    </form>
-                </div>
-            </div>                      
-        </section>
+        <div class="corpo">
+            <img src="/imgs/CAPA.png" class="imgcapa">
+            <section class="hero">
+                <h1>Bem-vindo à Ciro Antenas</h1>
+                <h2>Soluções modernas em segurança eletrônica</h2>
+                <div class="botao-container">
+                <a href=""><button class="agendar" onclick="return abrirModal()" type="button">Agendar Orçamento ou Atendimento</button></a>
+                </div>        
+            </section>
+        </div>
+        
         <section class="destaques">
-          <h1>Nossos Destaques</h1>
           <div class="destaques-textos">
               <div class="texto-bloco">
                   <h2>Segurança Residencial</h2>
@@ -65,10 +44,9 @@
                   </p>
               </div>
               <div class="texto-bloco">
-                  <h2>Segurança Empresarial</h2>
+                  <h2>Soluções para Internet Rural</h2>
                   <p>
-                      Sistemas avançados de segurança para empresas, incluindo controle de acesso e 
-                      monitoramento remoto.
+                      Seja ampliando o sinal de celular com torres elevadas ou sistemas via satélite, temos uma gama de soluções para se encaixar qualquer que seja o seu cenário.
                   </p>
               </div>
               <div class="texto-bloco">
@@ -82,16 +60,13 @@
       
           <div class="destaques-imagens">
               <div class="imagem-bloco">
-                  <img src="img/espaco1.jpg" alt="Imagem Espaço 1">
+                  <img src="/imgs/antena.png" alt="Imagem Espaço 1">
               </div>
               <div class="imagem-bloco">
-                  <img src="img/espaco2.jpg" alt="Imagem Espaço 2">
+                  <img src="imgs/concertina.png" alt="Imagem Espaço 2">
               </div>
           </div>
       </section>
-       
-
-
     </main>
 
     <!-- Rodapé -->
@@ -131,6 +106,27 @@
                 modal.style.display = 'none';
             }
         };
-    </script>    
+    </script>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+            <h2>Agende seu Serviço</h2>
+            <form id="formulario-agendar">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+
+                <label for="mensagem">Qual o problema que deseja solucionar?</label>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva o serviço que você deseja" required></textarea>
+
+                <button type="submit" class="enviar">Enviar: entraremos em contato o mais breve possível!</button>
+            </form>
+        </div>
+    </div>            
 </body>
 </html>
