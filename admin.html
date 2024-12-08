@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header class="admin-header">
+        <h1>Painel Administrativo</h1>
+    </header>
+    <main class="admin-container">
+        <section class="admin-section">
+            <h2>Formulários Recebidos</h2>
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Telefone</th>
+                        <th>Mensagem</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dados de exemplo (pode ser substituído por dados dinâmicos) -->
+                    <tr>
+                        <td>João Silva</td>
+                        <td>joao.silva@empresa.com</td>
+                        <td>(11) 98765-4321</td>
+                        <td>Preciso de um orçamento para câmeras de segurança.</td>
+                        <td>
+                            <button class="btn-acao visualizar">Visualizar</button>
+                            <button class="btn-acao excluir">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Maria Santos</td>
+                        <td>maria.santos@exemplo.com</td>
+                        <td>(21) 91234-5678</td>
+                        <td>Gostaria de informações sobre alarmes residenciais.</td>
+                        <td>
+                            <button class="btn-acao visualizar">Visualizar</button>
+                            <button class="btn-acao excluir">Excluir</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="admin-footer">
+        <p>&copy; 2024 Empresa de Segurança Eletrônica</p>
+    </footer>
+</body>
+</html>
