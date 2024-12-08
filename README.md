@@ -4,6 +4,11 @@
 
 ### 🌐 [Acesse o Projeto Aqui](https://ciroantenas.vercel.app/)
 
+### Integrantes do grupo
+Eduardo Sabino Cardoso Morais (https://github.com/edusabino123)
+Emanuel Miranda Souza (https://github.com/emanuelmsz)
+Sofia Alves Bandeira (https://github.com/sofiabandeira)
+
 ## 📋 Descrição  
 Este projeto é um site desenvolvido para uma empresa de segurança eletrônica, projetado para facilitar a exposição dos serviços prestados, o agendamento de serviços pelos clientes e a comunicação direta via WhatsApp. O site é responsivo e apresenta uma interface amigável, inspirada no design da Truoba, priorizando a usabilidade e uma estética moderna.
 
