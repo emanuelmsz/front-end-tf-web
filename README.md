@@ -6,7 +6,9 @@
 
 ### Integrantes do grupo
 Eduardo Sabino Cardoso Morais (https://github.com/edusabino123)
+
 Emanuel Miranda Souza (https://github.com/emanuelmsz)
+
 Sofia Alves Bandeira (https://github.com/sofiabandeira)
 
 ## 📋 Descrição  
