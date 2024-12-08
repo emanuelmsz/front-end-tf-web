@@ -1,73 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ciro Antenas</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Ciro Antenas</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="header">
-    <nav class="navbar">
-        <div class="divmenu">
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar">
             <ul class="menu">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Produtos & Serviços</a></li>
-                <li><a href="#">Contato & Sobre Nós</a></li>
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="servicos.html">Produtos & Serviços</a></li>
+                <li><a href="contato.html">Contato & Sobre Nós</a></li>
             </ul>
+            <div class="logo">
+                <span>Ciro Antenas</span><br>
+                <small>Segurança Eletrônica</small>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="hero">
+            <h1>Bem-vindo à Ciro Antenas</h1>
+            <h2>Soluções modernas em segurança eletrônica</h2>
+            <div class="botao-container">
+              <a href=""><button class="agendar" onclick="return abrirModal()" type="button">Agendar Orçamento ou Atendimento</button></a>
+            </div>
+
+            <!-- Modal de Formulário -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="fechar" onclick="fecharModal()">&times;</span>
+                    <h2>Agende seu Serviço</h2>
+                    <form id="formulario-agendar">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+
+                        <label for="mensagem">Qual o problema que deseja solucionar?</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva o serviço que você deseja" required></textarea>
+
+                        <button type="submit" class="enviar">Enviar: entraremos em contato o mais breve possível!</button>
+                    </form>
+                </div>
+            </div>                      
+        </section>
+        <section class="destaques">
+          <h1>Nossos Destaques</h1>
+          <div class="destaques-textos">
+              <div class="texto-bloco">
+                  <h2>Segurança Residencial</h2>
+                  <p>
+                      Oferecemos soluções completas para proteger sua casa, com monitoramento 24/7 e 
+                      equipamentos de última geração.
+                  </p>
+              </div>
+              <div class="texto-bloco">
+                  <h2>Segurança Empresarial</h2>
+                  <p>
+                      Sistemas avançados de segurança para empresas, incluindo controle de acesso e 
+                      monitoramento remoto.
+                  </p>
+              </div>
+              <div class="texto-bloco">
+                  <h2>Monitoramento Inteligente</h2>
+                  <p>
+                      Acompanhe em tempo real o que acontece nos seus espaços através de aplicativos 
+                      integrados.
+                  </p>
+              </div>
+          </div>
+      
+          <div class="destaques-imagens">
+              <div class="imagem-bloco">
+                  <img src="img/espaco1.jpg" alt="Imagem Espaço 1">
+              </div>
+              <div class="imagem-bloco">
+                  <img src="img/espaco2.jpg" alt="Imagem Espaço 2">
+              </div>
+          </div>
+      </section>
+       
+
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <ul class="menu-footer">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="servicos.html">Produtos & Serviços</a></li>
+            <li><a href="contato.html">Contato & Sobre Nós</a></li>
+        </ul>
+        <div class="footer-logo">
+            <span>Ciro Antenas</span><br>
+            <small>© 2024. Todos os direitos reservados.</small>
         </div>
-        <div class="logo">
-            <img src="logo.png" alt="Ciro Antenas">
-            <span>e Segurança Eletrônica</span>
+        <div class="social-icons">
+            <a href="#">YouTube</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
         </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="titulo">
-        <h1>Title</h1>
-        <h2>Subtitle</h2>
-        <button class="btn">Agendar</button>
-      </div>
-    </section>
-
-    <section class="features">
-      <article>
-        <h3>Title</h3>
-        <p>Body text for whatever you'd like to say. Add main takeaway points...</p>
-      </article>
-      <article>
-        <h3>Title</h3>
-        <p>Body text for whatever you'd like to say. Add main takeaway points...</p>
-      </article>
-      <article>
-        <h3>Title</h3>
-        <p>Body text for whatever you'd like to say. Add main takeaway points...</p>
-      </article>
-    </section>
-
-    <section class="gallery">
-      <div class="image-placeholder"></div>
-      <div class="image-placeholder"></div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <nav>
-      <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Produtos & Serviços</a></li>
-        <li><a href="#">Contato & Sobre Nós</a></li>
-      </ul>
-    </nav>
-    <p>Ciro Antenas © 2024. All rights reserved.</p>
-    <div class="social-links">
-      <a href="#">YouTube</a>
-      <a href="#">Facebook</a>
-      <a href="#">Twitter</a>
-      <a href="#">LinkedIn</a>
-    </div>
-  </footer>
+    </footer>
+    <script>
+        // Função para abrir o modal
+        function abrirModal() {
+            document.getElementById('modal').style.display = 'flex';
+            return false;
+        }
+    
+        // Função para fechar o modal
+        function fecharModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    
+        // Fechar o modal ao clicar fora do conteúdo
+        window.onclick = function (event) {
+            const modal = document.getElementById('modal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        };
+    </script>    
 </body>
 </html>
