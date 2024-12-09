@@ -20,7 +20,7 @@ Este projeto é um site desenvolvido para uma empresa de segurança eletrônica,
 - **Formulário para Agendamento de Serviços**  
   Permite que os clientes agendem serviços diretamente pelo site, preenchendo informações específicas em um formulário intuitivo.
 
--**Página de acesso aos formulários gerados**
+- **Página de acesso aos formulários gerados**
   É possível, assim, ter controle e atender cada caso de forma específica, otimizada e rápida
 
 - **Exposição dos Serviços Prestados**  
