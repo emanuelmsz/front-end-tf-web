@@ -5,10 +5,8 @@
 ### 🌐 [Acesse o Projeto Aqui](https://ciroantenas.vercel.app/)
 
 ### Integrantes do grupo
-Eduardo Sabino Cardoso Morais (https://github.com/edusabino123)
-
-Emanuel Miranda Souza (https://github.com/emanuelmsz)
-
+Eduardo Sabino Cardoso Morais (https://github.com/edusabino123)  
+Emanuel Miranda Souza (https://github.com/emanuelmsz)  
 Sofia Alves Bandeira (https://github.com/sofiabandeira)
 
 ## 📋 Descrição  
@@ -20,7 +18,7 @@ Este projeto é um site desenvolvido para uma empresa de segurança eletrônica,
 - **Formulário para Agendamento de Serviços**  
   Permite que os clientes agendem serviços diretamente pelo site, preenchendo informações específicas em um formulário intuitivo.
 
-- **Página de acesso aos formulários gerados**
+- **Página de acesso aos formulários gerados**  
   É possível, assim, ter controle e atender cada caso de forma específica, otimizada e rápida
 
 - **Exposição dos Serviços Prestados**  
