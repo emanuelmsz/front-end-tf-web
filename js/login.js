@@ -45,7 +45,7 @@ async function autenticar(e) {
     localStorage.setItem('jwt', data.token);
 
     //página seja redirecionada para a Área Restrita (home.html).
-    window.location.href = 'admin.html';
+    window.location.href = 'login.html';
   } catch (error) {
     // Exibe uma mensagem de erro na interface do usuário em vermelho
     areaMensagem.style = "color:red";
