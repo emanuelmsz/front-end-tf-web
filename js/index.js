@@ -11,13 +11,13 @@ import { verificarAutenticacao } from './autorizar.js';
   }
 })();
 
-const botaoSalvar = document.getElementById('submit');
-botaoSalvar.addEventListener('click', inserirUsuario);
+const botaoSalvar = document.getElementById('enviar');
+botaoSalvar.addEventListener('click', inserirServico);
 
-const url = "https://back-end-tf-web-emanuel.vercel.app/";
+const url = "https://back-end-tf-web-emanuel.vercel.app/servico";
 const token = localStorage.getItem('jwt');
 
-async function inserirUsuario(e) {
+async function inserirServico(e) {
   e.preventDefault();
   try {
     const dados = {

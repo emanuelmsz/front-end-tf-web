@@ -11,10 +11,11 @@ async function concluir(id){
         'x-access-token': token
         },
         body: JSON.stringify(dados)
-    });
-    if (!response.ok) {
-        throw new Error("Erro na requisição: " + response.status);
-    }
+        });
+        if (!response.ok) {
+            throw new Error("Erro na requisição: " + response.status);
+        }
+    window.location.reload()
     } catch (error) {
     console.error("Erro:", error);
     }}
@@ -32,15 +33,16 @@ async function excluir(id){
             'x-access-token': token
             },
             body: JSON.stringify(dados)
+            
         });
         if (!response.ok) {
             throw new Error("Erro na requisição: " + response.status);
         }
+        window.location.reload();
         } catch (error) {
         console.error("Erro:", error);
         }}
     }
-
 const modal = document.getElementById('modalServico');
 const span = document.getElementsByClassName('fechar')[0];
 
