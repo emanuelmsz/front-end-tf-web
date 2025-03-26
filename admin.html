@@ -16,35 +16,19 @@
             <table class="admin-table">
                 <thead>
                     <tr>
+                        <th>ID</th>
                         <th>Nome</th>
                         <th>E-mail</th>
                         <th>Telefone</th>
                         <th>Mensagem</th>
+                        <th>Data Agendamento</th>
+                        <th>Data Conclusao</th>
+                        <th>Concluido?</th> 
                         <th>Ações</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <!-- Dados de exemplo (pode ser substituído por dados dinâmicos) -->
-                    <tr>
-                        <td>João Silva</td>
-                        <td>joao.silva@empresa.com</td>
-                        <td>(11) 98765-4321</td>
-                        <td>Preciso de um orçamento para câmeras de segurança.</td>
-                        <td>
-                            <button class="btn-acao visualizar">Visualizar</button>
-                            <button class="btn-acao excluir">Excluir</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Maria Santos</td>
-                        <td>maria.santos@exemplo.com</td>
-                        <td>(21) 91234-5678</td>
-                        <td>Gostaria de informações sobre alarmes residenciais.</td>
-                        <td>
-                            <button class="btn-acao visualizar">Visualizar</button>
-                            <button class="btn-acao excluir">Excluir</button>
-                        </td>
-                    </tr>
+                <tbody id="tabela-usuarios">
+                    
                 </tbody>
             </table>
         </section>
@@ -53,4 +37,5 @@
         <p>&copy; 2024 Empresa de Segurança Eletrônica</p>
     </footer>
 </body>
+<script type="module" src="js/admin.js"></script>
 </html>
